@@ -25,7 +25,7 @@ times = int(input("[Bimzz] PACKETS : "))
 threads = int(input("[Bimzz] THREADS : "))
 
 os.system("clear")
-print("[Bimzz] => [Wait 3s] => [Loading 3 Detik] => | Sabar Kontol...")
+print("[Bimzz] => [Wait 3s] => [Loading 3 Detik]")
 time.sleep(3)
 def run():
 	data = random._urandom(1490)
