@@ -19,7 +19,7 @@ print("[+] KyTeam  : https://discord.gg/YMT9utYW5U")
 print("------------------------------------------------")
 
 ip = str(input("[Bimzz] IP TARGET : "))
-port = int(input("[Bimzz] IP TARGET : "))
+port = int(input("[Bimzz] PORT TARGET : "))
 times = int(input("[Bimzz] PACKETS : "))
 threads = int(input("[Bimzz] THREADS (9024) : "))
 
