@@ -7,6 +7,7 @@ import os
 import random
 import time
 import socket
+import choice
 import threading
 
 #UBAH AUTHOR YATIM
@@ -21,7 +22,7 @@ print("------------------------------------------------")
 ip = str(input("[Bimzz] IP TARGET : "))
 port = int(input("[Bimzz] PORT TARGET : "))
 times = int(input("[Bimzz] PACKETS : "))
-threads = int(input("[Bimzz] THREADS (9024) : "))
+threads = int(input("[Bimzz] THREADS : "))
 
 os.system("clear")
 print("[Bimzz] => [Wait 3s] => [Loading 3 Detik] => | Sabar Kontol...")
