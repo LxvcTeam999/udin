@@ -7,7 +7,6 @@ import os
 import random
 import time
 import socket
-import choice
 import threading
 
 #UBAH AUTHOR YATIM
